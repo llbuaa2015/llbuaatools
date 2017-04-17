@@ -19,3 +19,7 @@
 # git config --global credential.helper 'cache --timeout=3600'
 
 # sudo sh charles
+
+# rm docker containers
+# sudo docker ps --filter "status=created" | xargs --no-run-if-empty sudo docker rm
+

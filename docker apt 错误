@@ -1,0 +1,8 @@
+一种是替换镜像源头,比较好使
+
+RUN cp /etc/apt/sources.list /etc/apt/sources.list.bak
+#RUN sed -i s:/archive.ubuntu.com:/cn.archive.ubuntu.com:g /etc/apt/sources.list
+RUN sed -i s:/archive.ubuntu.com:/mirrors.aliyun.com/ubuntu:g /etc/apt/sources.list
+#RUN sed -i s:/archive.ubuntu.com:/mirrors.tuna.tsinghua.edu.cn/ubuntu:g /etc/apt/sources.list
+
+一种是重新安装docker

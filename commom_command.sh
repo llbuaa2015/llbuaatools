@@ -23,3 +23,5 @@
 # rm docker containers
 # sudo docker ps --filter "status=created" | xargs --no-run-if-empty sudo docker rm
 
+# 工作区映射
+# docker run -ti --volume=$(pwd):/workspace caffe:cpu bash
